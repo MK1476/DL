@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 3.0.h), // Use sizer to define height
               ElevatedButton(
                 onPressed: () {
-                  // Add logic here to process the phone number
+                  Navigator.pushNamed(context, '/otp');
                 },
                 child: Text(
                   "Login",

@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       builder: (context, orientation, deviceType) {
         return MaterialApp(
           title: 'New Bharath TDS',
-          initialRoute: '/splash',
+          initialRoute: '/home',
           theme: ThemeData(
             primarySwatch: Colors.blue, // Define your primary color
             fontFamily: GoogleFonts.nunito().fontFamily, // Use a custom font

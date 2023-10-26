@@ -39,6 +39,9 @@ class OtpEntryScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   // Add logic here to verify OTP
+
+                  Navigator.pushNamed(
+                      context, '/home'); // Navigate to home screen
                 },
                 child: Text(
                   "Verify OTP",
