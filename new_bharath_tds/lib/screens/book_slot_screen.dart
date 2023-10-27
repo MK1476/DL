@@ -5,43 +5,44 @@ class BookSlotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Book a Slot"),
-        backgroundColor: Colors.blue, // Customize the app bar color
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(5.0.w),
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.all(2.0.w),
-              child: Text(
-                "Select a Slot to Book",
-                style: TextStyle(
-                  fontSize: 15.0.sp,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.grey,
+        appBar: AppBar(
+          title: Text("Book a Slot"),
+          backgroundColor: Colors.blue, // Customize the app bar color
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.all(5.0.w),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(2.0.w),
+                  child: Text(
+                    "Select a Slot to Book",
+                    style: TextStyle(
+                      fontSize: 15.0.sp,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.grey,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            SizedBox(height: 2.0.h),
-            SlotGrid(
-              date: "October 30, 2023",
-              slotTimes: [
-                "10:00 AM - 12:00 PM",
-                "2:00 PM - 4:00 PM",
-                "10:00 AM - 12:00 PM",
-                "2:00 PM - 4:00 PM",
-                "10:00 AM - 12:00 PM",
-                "2:00 PM - 4:00 PM",
-                // Add more slot times as needed
+                SizedBox(height: 2.0.h),
+                SlotGrid(
+                  date: "October 30, 2023",
+                  slotTimes: [
+                    "10:00 AM - 12:00 PM",
+                    "2:00 PM - 4:00 PM",
+                    "10:00 AM - 12:00 PM",
+                    "2:00 PM - 4:00 PM",
+                    "10:00 AM - 12:00 PM",
+                    "2:00 PM - 4:00 PM",
+                    // Add more slot times as needed
+                  ],
+                ),
+                // Add more SlotGrid widgets for different dates
               ],
             ),
-            // Add more SlotGrid widgets for different dates
-          ],
-        ),
-      ),
-    );
+          ),
+        ));
   }
 }
 

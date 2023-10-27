@@ -31,6 +31,7 @@ class _AScrollWidgetState extends State<AScrollWidget> {
   void dispose() {
     // Dispose of the scroll controller when the widget is removed from the tree.
     _scrollController.dispose();
+    currentAnnouncementIndex = 0;
     super.dispose();
   }
 

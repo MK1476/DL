@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_bharath_tds/screens/login_screen.dart';
+import 'package:new_bharath_admin/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // After 2 seconds, navigate to the LoginScreen
       Future.delayed(Duration(seconds: 2), () {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => LoginScreen()),
+          MaterialPageRoute(builder: (context) => HomeScreen()),
         );
       });
     });
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
           duration: Duration(seconds: 2),
           opacity: opacity,
           child: Text(
-            "New Bharath \n Technical and Driving School ",
+            "New Bharath \n Technical and Driving School",
             style: TextStyle(
               fontSize: 24.0,
               fontWeight: FontWeight.bold,
